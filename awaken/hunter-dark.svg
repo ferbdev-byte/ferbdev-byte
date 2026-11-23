@@ -58,7 +58,7 @@
 <path d="M458.2 64.5H499.5V89.8L493.8 95.5H452.5V70.2Z" fill="none" stroke="#a8b6cc" stroke-width="1"/>
 <text x="476" y="87.2" class="rank" fill="#a8b6cc" text-anchor="middle">D</text>
 
-</g><text x="510" y="70" class="label" fill="#8a9bc0">STR</text><text x="510" y="88" class="value" fill="#e6edf7">51</text><text x="510" y="103" class="code" fill="#8a9bc0">TOP 48%</text>
+</g><text x="510" y="70" class="label" fill="#8a9bc0">STR</text><text x="510" y="88" class="value" fill="#e6edf7">52</text><text x="510" y="103" class="code" fill="#8a9bc0">TOP 48%</text>
 <g>
 <g class="fx-a" filter="url(#fx-blur)" opacity="0.75"><path d="M582.4 65H623V89.6L617.6 95H577V70.4Z" fill="none" stroke="#d77bff" stroke-width="3"/></g>
 <path d="M582 64H624V90L618 96H576V70Z" fill="#060a14"/>
