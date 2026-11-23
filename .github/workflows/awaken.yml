@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: billtruong003/git-profile-awaken@main
+      - uses: billtruong003/git-profile-awaken@af46d87a95cb6c29091286596d202eccef2eae8f # main tại thời điểm khoá
         with:
           # AWAKEN_TOKEN (chỉ đọc) để tính cả commit ở repo private; chưa có thì dùng token mặc định (chỉ public)
           token: ${{ secrets.AWAKEN_TOKEN || github.token }}
