@@ -1,8 +1,8 @@
 {
   "login": "ferbdev-byte",
-  "level": 5,
+  "level": 7,
   "overall": "B",
-  "overallPercentile": 0.755970781414181,
+  "overallPercentile": 0.7830381055935647,
   "layout": "custom",
   "class": {
     "name": "Blade Master",
@@ -13,21 +13,21 @@
   "stats": [
     {
       "code": "STR",
-      "value": 57,
-      "rank": "D",
-      "percentile": 0.5426342179968171
+      "value": 85,
+      "rank": "C",
+      "percentile": 0.6396164538760774
     },
     {
       "code": "AGI",
-      "value": 22,
-      "rank": "A",
-      "percentile": 0.9014883383309713
+      "value": 50,
+      "rank": "S",
+      "percentile": 0.9603980659772843
     },
     {
       "code": "INT",
-      "value": 6,
-      "rank": "B",
-      "percentile": 0.8696075966171363
+      "value": 16,
+      "rank": "A",
+      "percentile": 0.9343843231465716
     },
     {
       "code": "VIT",
@@ -49,6 +49,41 @@
     }
   ],
   "events": [
+    {
+      "kind": "level",
+      "subject": "Level",
+      "from": "5",
+      "to": "7",
+      "at": "2026-11-23T13:01:39.806Z"
+    },
+    {
+      "kind": "stat",
+      "subject": "STR",
+      "from": "D",
+      "to": "C",
+      "at": "2026-11-23T13:01:39.806Z"
+    },
+    {
+      "kind": "stat",
+      "subject": "AGI",
+      "from": "A",
+      "to": "S",
+      "at": "2026-11-23T13:01:39.806Z"
+    },
+    {
+      "kind": "stat",
+      "subject": "INT",
+      "from": "B",
+      "to": "A",
+      "at": "2026-11-23T13:01:39.806Z"
+    },
+    {
+      "kind": "achievement",
+      "subject": "yolo",
+      "from": "2",
+      "to": "3",
+      "at": "2026-11-23T13:01:39.806Z"
+    },
     {
       "kind": "overall",
       "subject": "Overall rank",
@@ -75,22 +110,22 @@
     {
       "id": "pull-shark",
       "tier": 2,
-      "value": 22
+      "value": 50
     },
     {
       "id": "quickdraw",
       "tier": 3,
-      "value": 27
+      "value": 65
     },
     {
       "id": "yolo",
-      "tier": 2,
-      "value": 22
+      "tier": 3,
+      "value": 50
     },
     {
       "id": "relentless",
       "tier": 0,
-      "value": 57
+      "value": 85
     },
     {
       "id": "unbroken",
@@ -100,7 +135,7 @@
     {
       "id": "night-owl",
       "tier": 0,
-      "value": 15
+      "value": 9
     },
     {
       "id": "early-bird",
@@ -110,7 +145,7 @@
     {
       "id": "weekend-warrior",
       "tier": 1,
-      "value": 28
+      "value": 27
     },
     {
       "id": "gate-opener",
@@ -160,7 +195,7 @@
     {
       "id": "berserker",
       "tier": 3,
-      "value": 125
+      "value": 166
     },
     {
       "id": "diligent",
@@ -219,5 +254,5 @@
       "three"
     ]
   },
-  "syncedAt": "2026-11-23T12:20:39.354Z"
+  "syncedAt": "2026-11-23T13:01:39.806Z"
 }
