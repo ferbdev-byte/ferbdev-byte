@@ -35,10 +35,10 @@
     </g>
 
     <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
-      <text x="72" y="78" fill="#e3b341" font-size="14" font-weight="600" letter-spacing="4">FRONTEND DEVELOPER · INTERNAL SYSTEMS · AUTOMATION</text>
+      <text x="72" y="78" fill="#e3b341" font-size="14" font-weight="600" letter-spacing="4">FRONTEND DEVELOPER · UI · AUTOMATION</text>
       <text x="70" y="140" fill="#f3f4f6" font-size="56" font-weight="700">Võ Ngọc Cường</text>
-      <text x="72" y="182" fill="#a3aab4" font-size="20">Xây hệ thống nội bộ và công cụ tự động hoá cho doanh nghiệp</text>
-      <text x="72" y="214" fill="#5b626c" font-size="15" font-family="Consolas, 'SFMono-Regular', monospace">React · TypeScript · Tailwind · Python · Windows · AI có dẫn nguồn</text>
+      <text x="72" y="182" fill="#a3aab4" font-size="20">Giao diện có chuyển động, công cụ tự động hoá chạy ổn định</text>
+      <text x="72" y="214" fill="#5b626c" font-size="15" font-family="Consolas, 'SFMono-Regular', monospace">React · TypeScript · Tailwind · Three.js · Python · Windows</text>
     </g>
 
     <!-- vạch quét vàng chạy ngang -->

@@ -36,18 +36,18 @@
 </head>
 <body>
 
-<div class="card" id="team-hub">
-  <div class="top"><span class="kicker">Case study · Kiến trúc</span><span class="ci"><i></i>đang vận hành thử</span></div>
-  <h2>team-hub-architecture</h2>
-  <p class="desc">Bộ não điều hành nội bộ: Google Drive → máy chủ Windows 24/24 → AI trả lời có dẫn nguồn. 4 ADR.</p>
-  <div class="chips"><span class="chip">System design</span><span class="chip">Three.js</span><span class="chip">Drive API</span><span class="chip">RAG</span></div>
+<div class="card" id="filesync">
+  <div class="top"><span class="kicker">Windows · Đồng bộ</span><span class="ci"><i></i>12 tests</span></div>
+  <h2>win-file-sync</h2>
+  <p class="desc">Đồng bộ thư mục từng người về máy chủ trung tâm. Không bao giờ xoá bản gốc, có thùng rác, chặn file nhạy cảm.</p>
+  <div class="chips"><span class="chip">Python</span><span class="chip">Windows</span><span class="chip">CLI</span></div>
   <div class="visual"><div class="bar"><b></b><b></b><b></b></div>
     <div class="arch">
-      <div class="box"><b>Google Drive</b>nguồn sự thật</div>
-      <div class="box"><b>Bàn Việc</b>app nhân viên</div>
-      <div class="box gold wide"><b>Máy chủ Windows 24/24</b>kéo chỉ đọc · phiên bản · chỉ mục</div>
-      <div class="box"><b>Trợ lý AI</b>trả lời có nguồn</div>
-      <div class="box"><b>Sao lưu</b>ổ ngoài + cloud</div>
+      <div class="box"><b>PC An</b>LamViec/</div>
+      <div class="box"><b>PC Bình</b>LamViec/</div>
+      <div class="box gold wide"><b>Máy chủ</b>an/ · binh/ · ke-toan/ · .thung-rac/</div>
+      <div class="box"><b>Chép nguyên tử</b>tmp → os.replace</div>
+      <div class="box"><b>SHA-256</b>kiểm sau khi chép</div>
     </div>
   </div>
 </div>
@@ -98,7 +98,7 @@
   <p class="desc">Bộ công cụ cho máy chủ Windows: sao lưu có kiểm chứng, đồng bộ thư mục, chạy dịch vụ 24/24.</p>
   <div class="chips"><span class="chip">SHA-256</span><span class="chip">rclone</span><span class="chip">Task Scheduler</span></div>
   <div class="visual"><div class="bar"><b></b><b></b><b></b></div>
-<div class="term"><span class="m">$</span> dualbackup --drive-label SAOLUU backup C:\Kho
+<div class="term"><span class="m">$</span> dualbackup --drive-label SAOLUU backup D:\DuLieu
 Đã sao lưu <span class="g">20261123-190000</span>: 1540 file
 <span class="ok">✓</span> kiểm chứng SHA-256: thiếu 0, hỏng 0
 <span class="ok">✓</span> đẩy lên <span class="s">gdrive:SaoLuu</span>
