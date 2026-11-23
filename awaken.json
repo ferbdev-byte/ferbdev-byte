@@ -1,0 +1,9 @@
+{
+  "username": "ferbdev-byte",
+  "layout": "custom",
+  "widgets": ["hunter", "status", "activity", "skills"],
+  "theme": "solo_leveling",
+  "activity": "raid",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "title": "auto"
+}

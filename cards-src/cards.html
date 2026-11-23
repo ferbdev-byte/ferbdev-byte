@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#0c0d0f; --panel:#131518; --line:#262a30; --mute:#5b626c; --soft:#a3aab4; --text:#f3f4f6; --gold:#e3b341; --sky:#38bdf8; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: transparent; font-family: "Be Vietnam Pro", sans-serif; }
+  .card {
+    width: 800px; height: 440px; border-radius: 22px; overflow: hidden; position: relative;
+    background: radial-gradient(120% 90% at 100% 0%, #e3b3411a, transparent 60%), linear-gradient(160deg, #15171b, #0c0d0f);
+    border: 1px solid var(--line); color: var(--text); padding: 34px 36px; display: flex; flex-direction: column;
+  }
+  .card::before { content:""; position:absolute; inset:0; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 28px 28px; opacity:.28; mask-image: linear-gradient(180deg, #000 0%, transparent 70%); }
+  .top { display:flex; justify-content:space-between; align-items:center; position:relative; }
+  .kicker { font: 600 12px/1 "JetBrains Mono", monospace; letter-spacing: .18em; color: var(--gold); text-transform: uppercase; }
+  .ci { display:flex; gap:6px; align-items:center; font: 500 12px/1 "JetBrains Mono"; color: #4ade80; border:1px solid #4ade8033; background:#4ade8012; padding:6px 10px; border-radius:999px; }
+  .ci i { width:7px; height:7px; border-radius:50%; background:#4ade80; box-shadow:0 0 10px #4ade80; }
+  h2 { font-size: 34px; font-weight: 700; letter-spacing: -.02em; margin-top: 14px; position:relative; }
+  p.desc { color: var(--soft); font-size: 16px; line-height: 1.5; margin-top: 8px; max-width: 420px; position:relative; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; position:relative; max-width: 380px; }
+  .chip { font: 500 12px/1 "JetBrains Mono"; color: var(--soft); border:1px solid var(--line); background:#1b1e22; padding:7px 10px; border-radius:8px; }
+  .visual { position:absolute; right:-40px; bottom:-30px; width: 420px; height: 300px; border-radius: 16px; border:1px solid var(--line); overflow:hidden; box-shadow: 0 30px 60px #000a, 0 0 0 6px #ffffff06; transform: rotate(-4deg); background: var(--panel); }
+  .visual img { width:100%; height:100%; object-fit:cover; object-position: top left; }
+  .bar { height: 28px; background:#1b1e22; border-bottom:1px solid var(--line); display:flex; gap:6px; align-items:center; padding:0 12px; }
+  .bar b { width:10px; height:10px; border-radius:50%; background:#3a3f46; }
+  .term { font: 13px/1.75 "JetBrains Mono", monospace; color: var(--soft); padding: 14px 16px; white-space: pre; }
+  .term .g { color: var(--gold); } .term .s { color: var(--sky); } .term .ok { color:#4ade80; } .term .m { color: var(--mute); }
+  .arch { padding: 22px; display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .box { border:1px solid var(--line); background:#1b1e22; border-radius: 12px; padding: 12px; font-size: 13px; color: var(--soft); }
+  .box b { display:block; color: var(--text); font-size: 14px; margin-bottom: 4px; }
+  .box.gold { border-color:#e3b34166; background:#e3b34110; } .box.gold b { color: var(--gold); }
+  .wide { grid-column: span 2; text-align:center; }
+</style>
+</head>
+<body>
+
+<div class="card" id="team-hub">
+  <div class="top"><span class="kicker">Case study · Kiến trúc</span><span class="ci"><i></i>đang vận hành thử</span></div>
+  <h2>team-hub-architecture</h2>
+  <p class="desc">Bộ não điều hành nội bộ: Google Drive → máy chủ Windows 24/24 → AI trả lời có dẫn nguồn. 4 ADR.</p>
+  <div class="chips"><span class="chip">System design</span><span class="chip">Three.js</span><span class="chip">Drive API</span><span class="chip">RAG</span></div>
+  <div class="visual"><div class="bar"><b></b><b></b><b></b></div>
+    <div class="arch">
+      <div class="box"><b>Google Drive</b>nguồn sự thật</div>
+      <div class="box"><b>Bàn Việc</b>app nhân viên</div>
+      <div class="box gold wide"><b>Máy chủ Windows 24/24</b>kéo chỉ đọc · phiên bản · chỉ mục</div>
+      <div class="box"><b>Trợ lý AI</b>trả lời có nguồn</div>
+      <div class="box"><b>Sao lưu</b>ổ ngoài + cloud</div>
+    </div>
+  </div>
+</div>
+
+<div class="card" id="dashboard">
+  <div class="top"><span class="kicker">Frontend · Live demo</span><span class="ci"><i></i>CI + Pages</span></div>
+  <h2>scrap-inventory-dashboard</h2>
+  <p class="desc">Dashboard tồn kho phế liệu: nhập–xuất, giá vốn bình quân, lãi gộp, cảnh báo tồn thấp.</p>
+  <div class="chips"><span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Tailwind v4</span><span class="chip">Recharts</span><span class="chip">Vitest</span></div>
+  <div class="visual"><img src="dashboard.png"></div>
+</div>
+
+<div class="card" id="weighbridge">
+  <div class="top"><span class="kicker">IoT · RS232</span><span class="ci"><i></i>14 tests</span></div>
+  <h2>weighbridge-reader</h2>
+  <p class="desc">Đọc số cân xe tải từ đầu cân điện tử, nhận biết cân đứng yên, tính khối lượng hàng và thành tiền.</p>
+  <div class="chips"><span class="chip">Python</span><span class="chip">pyserial</span><span class="chip">XK3190</span><span class="chip">A&amp;D</span></div>
+  <div class="visual"><div class="bar"><b></b><b></b><b></b></div>
+<div class="term"><span class="m">$</span> weighbridge --port COM3 --price 8000
+<span class="m">[08:15:02]</span> <span class="s">51C-123.45</span>: cân lần 1 = <span class="g">24.360 kg</span>
+<span class="m">[08:31:47]</span> <span class="s">51C-123.45</span>: cân lần 2 = <span class="g">9.120 kg</span>
+    → hàng <span class="g">15.240 kg</span>, trừ 305 kg
+    → tính <span class="g">14.935 kg</span> = <span class="ok">119.480.000 đ</span>
+<span class="m">[09:02:10]</span> <span class="s">60H-678.90</span>: cân lần 1 = <span class="g">15.880 kg</span>
+<span class="m">▌</span></div>
+  </div>
+</div>
+
+<div class="card" id="phieu">
+  <div class="top"><span class="kicker">PDF · Tiếng Việt</span><span class="ci"><i></i>20 tests</span></div>
+  <h2>phieu-can-generator</h2>
+  <p class="desc">Xuất phiếu cân PDF khổ A5, tự tính tiền và đọc số tiền bằng chữ đúng quy tắc tiếng Việt.</p>
+  <div class="chips"><span class="chip">Python</span><span class="chip">ReportLab</span><span class="chip">pypdf</span></div>
+  <div class="visual" style="background:#fff"><img src="phieu.png"></div>
+</div>
+
+<div class="card" id="price">
+  <div class="top"><span class="kicker">Data · SQLite</span><span class="ci"><i></i>22 tests</span></div>
+  <h2>scrap-price-tracker</h2>
+  <p class="desc">Theo dõi giá sắt, đồng, nhôm, inox theo ngày. Biến động 7/30 ngày, biểu đồ, nhập CSV.</p>
+  <div class="chips"><span class="chip">Python</span><span class="chip">SQLite</span><span class="chip">Matplotlib</span></div>
+  <div class="visual"><img src="chart-dark.png" style="object-fit:contain;padding:10px"></div>
+</div>
+
+<div class="card" id="backup">
+  <div class="top"><span class="kicker">Windows · Độ tin cậy</span><span class="ci"><i></i>31 tests</span></div>
+  <h2>dual-backup <span style="color:var(--mute);font-weight:500">+2</span></h2>
+  <p class="desc">Bộ công cụ cho máy chủ Windows: sao lưu có kiểm chứng, đồng bộ thư mục, chạy dịch vụ 24/24.</p>
+  <div class="chips"><span class="chip">SHA-256</span><span class="chip">rclone</span><span class="chip">Task Scheduler</span></div>
+  <div class="visual"><div class="bar"><b></b><b></b><b></b></div>
+<div class="term"><span class="m">$</span> dualbackup --drive-label SAOLUU backup C:\Kho
+Đã sao lưu <span class="g">20261123-190000</span>: 1540 file
+<span class="ok">✓</span> kiểm chứng SHA-256: thiếu 0, hỏng 0
+<span class="ok">✓</span> đẩy lên <span class="s">gdrive:SaoLuu</span>
+<span class="m">$</span> winsync watch -c config.json
+<span class="m">09:00</span> [an] 12 file, 1 vào thùng rác, 0 lỗi
+<span class="m">$</span> winservice install --name MayChu\DongBo
+<span class="ok">✓</span> chạy khi khởi động, tự bật lại khi chết</div>
+  </div>
+</div>
+
+</body>
+</html>
