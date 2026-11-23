@@ -1,8 +1,8 @@
 {
   "login": "ferbdev-byte",
   "level": 5,
-  "overall": "C",
-  "overallPercentile": 0.7438024048590732,
+  "overall": "B",
+  "overallPercentile": 0.755970781414181,
   "layout": "custom",
   "class": {
     "name": "Blade Master",
@@ -13,27 +13,27 @@
   "stats": [
     {
       "code": "STR",
-      "value": 52,
+      "value": 57,
       "rank": "D",
-      "percentile": 0.5199962143911444
+      "percentile": 0.5426342179968171
     },
     {
       "code": "AGI",
-      "value": 16,
+      "value": 22,
       "rank": "A",
-      "percentile": 0.8705254562559692
+      "percentile": 0.9014883383309713
     },
     {
       "code": "INT",
-      "value": 2,
+      "value": 6,
       "rank": "B",
-      "percentile": 0.8091006482565466
+      "percentile": 0.8696075966171363
     },
     {
       "code": "VIT",
-      "value": 11,
-      "rank": "S",
-      "percentile": 0.9499142157630279
+      "value": 10,
+      "rank": "A",
+      "percentile": 0.9348315269247548
     },
     {
       "code": "LUK",
@@ -48,27 +48,49 @@
       "percentile": 0
     }
   ],
-  "events": [],
+  "events": [
+    {
+      "kind": "overall",
+      "subject": "Overall rank",
+      "from": "C",
+      "to": "B",
+      "at": "2026-11-23T12:20:39.354Z"
+    },
+    {
+      "kind": "stat",
+      "subject": "VIT",
+      "from": "S",
+      "to": "A",
+      "at": "2026-11-23T12:20:39.354Z"
+    },
+    {
+      "kind": "achievement",
+      "subject": "quickdraw",
+      "from": "2",
+      "to": "3",
+      "at": "2026-11-23T12:20:39.354Z"
+    }
+  ],
   "achievements": [
     {
       "id": "pull-shark",
       "tier": 2,
-      "value": 16
+      "value": 22
     },
     {
       "id": "quickdraw",
-      "tier": 2,
-      "value": 18
+      "tier": 3,
+      "value": 27
     },
     {
       "id": "yolo",
       "tier": 2,
-      "value": 16
+      "value": 22
     },
     {
       "id": "relentless",
       "tier": 0,
-      "value": 52
+      "value": 57
     },
     {
       "id": "unbroken",
@@ -78,7 +100,7 @@
     {
       "id": "night-owl",
       "tier": 0,
-      "value": 17
+      "value": 15
     },
     {
       "id": "early-bird",
@@ -93,7 +115,7 @@
     {
       "id": "gate-opener",
       "tier": 1,
-      "value": 9
+      "value": 8
     },
     {
       "id": "raider",
@@ -197,5 +219,5 @@
       "three"
     ]
   },
-  "syncedAt": "2026-11-23T11:43:19.946Z"
+  "syncedAt": "2026-11-23T12:20:39.354Z"
 }
