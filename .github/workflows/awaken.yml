@@ -1,0 +1,26 @@
+name: Awaken
+
+on:
+  schedule:
+    - cron: "10 17 * * *"   # 00:10 giờ Việt Nam
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [awaken.json]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: awaken
+  cancel-in-progress: true
+
+jobs:
+  awaken:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: billtruong003/git-profile-awaken@main
+        with:
+          # AWAKEN_TOKEN (chỉ đọc) để tính cả commit ở repo private; chưa có thì dùng token mặc định (chỉ public)
+          token: ${{ secrets.AWAKEN_TOKEN || github.token }}
