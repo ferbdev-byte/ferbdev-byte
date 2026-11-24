@@ -2,7 +2,7 @@
   "login": "ferbdev-byte",
   "level": 7,
   "overall": "B",
-  "overallPercentile": 0.7830381055935647,
+  "overallPercentile": 0.7921218647715008,
   "layout": "custom",
   "class": {
     "name": "Blade Master",
@@ -13,15 +13,15 @@
   "stats": [
     {
       "code": "STR",
-      "value": 85,
+      "value": 102,
       "rank": "C",
-      "percentile": 0.6396164538760774
+      "percentile": 0.6818221259256763
     },
     {
       "code": "AGI",
-      "value": 50,
+      "value": 66,
       "rank": "S",
-      "percentile": 0.9603980659772843
+      "percentile": 0.9729009417484948
     },
     {
       "code": "INT",
@@ -31,9 +31,9 @@
     },
     {
       "code": "VIT",
-      "value": 10,
-      "rank": "A",
-      "percentile": 0.9348315269247548
+      "value": 11,
+      "rank": "S",
+      "percentile": 0.9499142157630279
     },
     {
       "code": "LUK",
@@ -49,6 +49,27 @@
     }
   ],
   "events": [
+    {
+      "kind": "stat",
+      "subject": "VIT",
+      "from": "A",
+      "to": "S",
+      "at": "2026-11-24T03:18:19.687Z"
+    },
+    {
+      "kind": "achievement",
+      "subject": "relentless",
+      "from": "0",
+      "to": "1",
+      "at": "2026-11-24T03:18:19.687Z"
+    },
+    {
+      "kind": "achievement",
+      "subject": "collector",
+      "from": "0",
+      "to": "1",
+      "at": "2026-11-24T03:18:19.687Z"
+    },
     {
       "kind": "level",
       "subject": "Level",
@@ -83,74 +104,53 @@
       "from": "2",
       "to": "3",
       "at": "2026-11-23T13:01:39.806Z"
-    },
-    {
-      "kind": "overall",
-      "subject": "Overall rank",
-      "from": "C",
-      "to": "B",
-      "at": "2026-11-23T12:20:39.354Z"
-    },
-    {
-      "kind": "stat",
-      "subject": "VIT",
-      "from": "S",
-      "to": "A",
-      "at": "2026-11-23T12:20:39.354Z"
-    },
-    {
-      "kind": "achievement",
-      "subject": "quickdraw",
-      "from": "2",
-      "to": "3",
-      "at": "2026-11-23T12:20:39.354Z"
     }
   ],
   "achievements": [
     {
       "id": "pull-shark",
       "tier": 2,
-      "value": 50
+      "value": 66
     },
     {
       "id": "quickdraw",
       "tier": 3,
-      "value": 65
+      "value": 81
     },
     {
       "id": "yolo",
       "tier": 3,
-      "value": 50
+      "value": 66
     },
     {
       "id": "relentless",
-      "tier": 0,
-      "value": 85
+      "tier": 1,
+      "value": 102
     },
     {
       "id": "unbroken",
       "tier": 1,
-      "value": 22
+      "value": 23
     },
     {
       "id": "night-owl",
       "tier": 0,
-      "value": 9
+      "value": 8
     },
     {
       "id": "early-bird",
       "tier": 0,
-      "value": 0
+      "value": 2
     },
     {
       "id": "weekend-warrior",
       "tier": 1,
-      "value": 27
+      "value": 26
     },
     {
       "id": "gate-opener",
       "tier": 1,
-      "value": 8
+      "value": 9
     },
     {
       "id": "raider",
@@ -170,7 +170,7 @@
     {
       "id": "polyglot",
       "tier": 2,
-      "value": 7
+      "value": 5
     },
     {
       "id": "star-collector",
@@ -195,27 +195,27 @@
     {
       "id": "berserker",
       "tier": 3,
-      "value": 166
+      "value": 243
     },
     {
       "id": "diligent",
       "tier": 1,
-      "value": 64
+      "value": 65
     },
     {
       "id": "daily-grinder",
       "tier": 0,
-      "value": 0
+      "value": 1
     },
     {
       "id": "perfect-week",
       "tier": 0,
-      "value": 0
+      "value": 1
     },
     {
       "id": "quest-hunter",
       "tier": 0,
-      "value": 2
+      "value": 5
     },
     {
       "id": "boss-slayer",
@@ -229,30 +229,37 @@
     },
     {
       "id": "collector",
-      "tier": 0,
-      "value": 2
+      "tier": 1,
+      "value": 4
     }
   ],
   "quests": {
     "days": [
+      {
+        "date": "2026-11-23",
+        "cleared": 3,
+        "total": 3
+      },
       {
         "date": "2026-11-22",
         "cleared": 2,
         "total": 3
       }
     ],
-    "perfectDays": 0,
-    "run": 0,
-    "bestRun": 0,
-    "questsDone": 2,
+    "perfectDays": 1,
+    "run": 1,
+    "bestRun": 1,
+    "questsDone": 5,
     "bosses": [
       "2026-11-16"
     ],
     "escapes": 0,
     "kinds": [
       "contribute",
-      "three"
+      "three",
+      "issue",
+      "average"
     ]
   },
-  "syncedAt": "2026-11-23T13:01:39.806Z"
+  "syncedAt": "2026-11-24T03:18:19.687Z"
 }
