@@ -130,7 +130,7 @@
     {
       "id": "unbroken",
       "tier": 1,
-      "value": 23
+      "value": 24
     },
     {
       "id": "night-owl",
@@ -145,7 +145,7 @@
     {
       "id": "weekend-warrior",
       "tier": 1,
-      "value": 26
+      "value": 24
     },
     {
       "id": "gate-opener",
@@ -200,22 +200,22 @@
     {
       "id": "diligent",
       "tier": 1,
-      "value": 65
+      "value": 66
     },
     {
       "id": "daily-grinder",
       "tier": 0,
-      "value": 1
+      "value": 2
     },
     {
       "id": "perfect-week",
       "tier": 0,
-      "value": 1
+      "value": 2
     },
     {
       "id": "quest-hunter",
       "tier": 0,
-      "value": 5
+      "value": 8
     },
     {
       "id": "boss-slayer",
@@ -230,11 +230,16 @@
     {
       "id": "collector",
       "tier": 1,
-      "value": 4
+      "value": 5
     }
   ],
   "quests": {
     "days": [
+      {
+        "date": "2026-11-24",
+        "cleared": 3,
+        "total": 3
+      },
       {
         "date": "2026-11-23",
         "cleared": 3,
@@ -246,10 +251,10 @@
         "total": 3
       }
     ],
-    "perfectDays": 1,
-    "run": 1,
-    "bestRun": 1,
-    "questsDone": 5,
+    "perfectDays": 2,
+    "run": 2,
+    "bestRun": 2,
+    "questsDone": 8,
     "bosses": [
       "2026-11-16"
     ],
@@ -258,8 +263,9 @@
       "contribute",
       "three",
       "issue",
-      "average"
+      "average",
+      "two-repos"
     ]
   },
-  "syncedAt": "2026-11-24T03:18:19.687Z"
+  "syncedAt": "2026-11-25T01:23:50.657Z"
 }
